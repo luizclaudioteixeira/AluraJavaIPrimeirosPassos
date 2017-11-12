@@ -23,6 +23,12 @@ public class TestaFuncionario3 {
 	    
 	    System.out.println(f1 == f2); // Comparando com ==
 	    
+	    f2.nome = "Mariana";		// Mudando o nome de f2
+	    
+	    System.out.println(f1 == f2); // Comparando com == novamente
+	    
+	    System.out.println(f1.nome); // Mudar o nome em f2 também muda em f1
+	    
 	    /*
 	     *  O resultado dá true pois as referências são idênticas já que f2 recebeu o valor de f1
 	     *  Ou seja, as duas variáveis apontam para o mesmo objeto na memória
