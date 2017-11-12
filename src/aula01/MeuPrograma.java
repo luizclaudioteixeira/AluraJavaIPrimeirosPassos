@@ -1,4 +1,4 @@
-package Aula01;
+package aula01;
 
 	class MeuPrograma {
 		public static void main (String args[]) { // Método Main
