@@ -34,3 +34,4 @@ public class Funcionario {
 		System.out.println("RG: " + this.numRG);
 	}
 }
+
