@@ -39,8 +39,14 @@ public class Conta {
    			return false;								// retorna false
    		}
     }
+   	
+   	public double getSaldo(){
+   		return this.saldo;
+   	}
 
-    
+    public void setSaldo(double saldo) {
+    	this.saldo = saldo;
+    }
 }
 
 	
