@@ -7,12 +7,14 @@ import aula03.Exercicios.Funcionario;
  *	além de outros atributos que você julgar necessário.
  */
 
+
+
 // Classe Empresa
 public class Empresa {
 	
 	String nome;
 	String cnpj;
-	Funcionario[] arrayDefuncionarios;
+	Funcionario[] refParaArrayDefuncionarios;
 	int posiçãoLivre = 0;
 	
 	/*
@@ -21,10 +23,54 @@ public class Empresa {
 	 */
 	
 	void adicionar(Funcionario f){
-		this.arrayDefuncionarios[posiçãoLivre] = f;
+		this.refParaArrayDefuncionarios[posiçãoLivre] = f;
 		this.posiçãoLivre++;
 	}
 	
+	/*
+	 * Percorra o atributo empregados da sua instância da Empresa e imprima os salários de todos seus 
+	 * funcionários. Para fazer isso, você pode criar um método chamado mostraEmpregados dentro da classe 
+	 * Empresa
+	 */
+	
+	void mostraFuncionariosFE() {
+		int posição = 0;
+		
+		for (Funcionario i : refParaArrayDefuncionarios) {
+						
+			System.out.println("Posição do funcionário: " + posição);
+			System.out.println("Salário: " + i.getSalario());
+			posição++;
+		}
+	}
+	
+	
+	void mostraFuncionarios() {
+		
+		for( int i = 0 ; i < refParaArrayDefuncionarios.length; i++ ) {
+			System.out.println("Posição do funcionário: " + i);
+			//System.out.println("Nome do funcionário: " + arrayDefuncionarios[i].getNome());
+			//System.out.println("Departamento: " + arrayDefuncionarios[i].getDepartamento());
+			System.out.println("Salário: " + refParaArrayDefuncionarios[i].getSalario());
+		}
+	}
+	
+	/*
+	 * Crie um método para verificar se um determinado Funcionario se encontra ou não como funcionário 
+	 * desta empresa. 
+	 * O método deve se chamar contem e devolver um boolean. Ele recebe um funcionário.
+	 * 
+	 */
+	
+	boolean contem(Funcionario f) {
+		
+		for (int i = 0; i < this.posiçãoLivre; i++) {
+            if (f == this.refParaArrayDefuncionarios[i]) {
+                return true;
+            }
+        }
+        return false;
+	}
 }
 
 

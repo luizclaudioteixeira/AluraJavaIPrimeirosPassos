@@ -52,7 +52,7 @@ public class arrays {
 		int n = 15;
 		int [] arrayDeNPosições = new int [n];
 		
-		// Criando um array de para Contas
+		// Criando um array para Contas
 		Conta[] minhasContas;
 		minhasContas = new Conta[10];
 		

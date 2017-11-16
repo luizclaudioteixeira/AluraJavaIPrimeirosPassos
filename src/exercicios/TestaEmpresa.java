@@ -15,7 +15,7 @@ public class TestaEmpresa {
 		Empresa empresaA = new Empresa();
 		
 		// Criando o objeto array de Funcionários e colocando arrayDefuncionarios para apontar
-		empresaA.arrayDefuncionarios = new Funcionario[10];
+		empresaA.refParaarrayDefuncionarios = new Funcionario[5];
 		
 		// Criando um funcionário e Adicionando ao array de funcionários
 			// Funcionario funcionario1 = new Funcionario();
@@ -30,7 +30,7 @@ public class TestaEmpresa {
 			empresaA.adicionar(f);
 		}
 		
-		
+		empresaA.mostraFuncionariosFE();
 	}
 
 }

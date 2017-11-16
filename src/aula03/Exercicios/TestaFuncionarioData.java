@@ -5,8 +5,8 @@ public class TestaFuncionarioData {
 			
 			Funcionario f1 = new Funcionario();
 			
-			 f1.nome = "Luiz";
-			 f1.departamento = "Suporte";
+			 f1.setNome("Luiz");
+			 f1.setDepartamento("Suporte");
 			 f1.salario = 1000;
 			 f1.numRG = "12345678";
 			 

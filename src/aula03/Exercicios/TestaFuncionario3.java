@@ -11,8 +11,8 @@ public class TestaFuncionario3 {
 		
 		Funcionario f1 = new Funcionario (); // Criando  funcionário
 
-		f1.nome = "Luiz";
-		f1.departamento = "Suporte";
+		f1.setNome("Luiz");
+		f1.setDepartamento("Suporte");
 	    f1.salario = 1000;
 	    f1.dataDeAdmissao = "12/11/2017";
 	    f1.numRG = "12345678";	
@@ -23,11 +23,11 @@ public class TestaFuncionario3 {
 	    
 	    System.out.println(f1 == f2); // Comparando com ==
 	    
-	    f2.nome = "Mariana";		// Mudando o nome de f2
+	    f2.setNome("Mariana");		// Mudando o nome de f2
 	    
 	    System.out.println(f1 == f2); // Comparando com == novamente
 	    
-	    System.out.println(f1.nome); // Mudar o nome em f2 também muda em f1
+	    System.out.println(f1.getNome()); // Mudar o nome em f2 também muda em f1
 	    
 	    /*
 	     *  O resultado dá true pois as referências são idênticas já que f2 recebeu o valor de f1

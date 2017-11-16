@@ -12,14 +12,14 @@ public class TestaFuncionario2 {
 		Funcionario f1 = new Funcionario (); // Criando primeiro funcionário
 		Funcionario f2 = new Funcionario (); // Criando segundo funcionário
 		
-		 f1.nome = "Luiz";
-		 f1.departamento = "Suporte";
+		 f1.setNome("Luiz");
+		 f1.setDepartamento("Suporte");
 		 f1.salario = 1000;
 		 f1.dataDeAdmissao = "12/11/2017";
 		 f1.numRG = "12345678";
 		 
-		 f2.nome = "Claudio";
-		 f2.departamento = "Vendas";
+		 f2.setNome("Claudio");
+		 f2.setDepartamento("Vendas");
 		 f2.salario = 3000;
 		 f2.dataDeAdmissao = "12/11/2015";
 		 f2.numRG = "6666666";
@@ -29,8 +29,8 @@ public class TestaFuncionario2 {
 		 
 		 // Colocando os dois funcionário com atributos iguais:
 		 
-		 f2.nome = "Luiz";
-		 f2.departamento = "Suporte";
+		 f2.setNome("Luiz");
+		 f2.setDepartamento("Suporte");
 		 f2.salario = 1000;
 		 f2.dataDeAdmissao = "12/11/2017";
 		 f2.numRG = "12345678";

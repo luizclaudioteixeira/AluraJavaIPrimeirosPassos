@@ -15,8 +15,8 @@ package aula03.Exercicios;
 
 public class Funcionario {
 	
-	String nome;
-	String departamento;
+	private String nome;
+	private String departamento;
 	double salario;
 	Data dataDeAdmissao;
 	String numRG;
@@ -30,8 +30,8 @@ public class Funcionario {
 	}
 	
 	public void mostra() {
-		System.out.println("Nome do Funcionário: " + this.nome);
-		System.out.println("Departamento: " + this.departamento);
+		System.out.println("Nome do Funcionário: " + this.getNome());
+		System.out.println("Departamento: " + this.getDepartamento());
 		System.out.println("Salário atual: " + this.salario);
 		System.out.println("Data de admissão:" + dataDeAdmissao.getFormatada());
 		System.out.println("RG: " + this.numRG);
@@ -43,6 +43,22 @@ public class Funcionario {
 	
 	public double getSalario() {
 		return this.salario;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
 	}
 }
 
