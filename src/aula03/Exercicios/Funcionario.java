@@ -29,12 +29,20 @@ public class Funcionario {
 		return (this.salario * 12);
 	}
 	
-	void mostra() {
+	public void mostra() {
 		System.out.println("Nome do Funcionário: " + this.nome);
 		System.out.println("Departamento: " + this.departamento);
 		System.out.println("Salário atual: " + this.salario);
 		System.out.println("Data de admissão:" + dataDeAdmissao.getFormatada());
 		System.out.println("RG: " + this.numRG);
+	}
+	
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	public double getSalario() {
+		return this.salario;
 	}
 }
 
