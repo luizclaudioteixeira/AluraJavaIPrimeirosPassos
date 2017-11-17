@@ -1,6 +1,4 @@
-package exercicios;
-
-import aula03.Exercicios.Funcionario;
+package aula05.exercicios;
 
 /*
  *	Crie uma classe Empresa. A Empresa tem um nome, cnpj e uma referência a uma array de Funcionario, 
@@ -8,19 +6,41 @@ import aula03.Exercicios.Funcionario;
  */
 
 
-
 // Classe Empresa
 public class Empresa {
 	
-	String nome;
-	String cnpj;
-	Funcionario[] refParaArrayDefuncionarios;
-	int posiçãoLivre = 0;
+	// Atributos de Classe
+	private String nome;
+	private String cnpj;
+	private Funcionario[] refParaArrayDefuncionarios;
+	private int posiçãoLivre = 0;
 	
-	/*
-	 * A Empresa deve ter um método adicionar, que recebe uma referência a Funcionario como argumento 
-	 * e guarda esse funcionário.
-	 */
+	
+	// Getters and Setters
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public String getCnpj() {
+		return this.cnpj;
+	}
+	
+	public Funcionario getFuncionario(int posicao){
+		return this.refParaArrayDefuncionarios[posicao];
+	}
+															/*
+															 * A Empresa deve ter um método adicionar, 
+															 * que recebe uma referência a Funcionario 
+															 * como argumento e guarda esse funcionário.
+															 */
 	
 	void adicionar(Funcionario f){
 		this.refParaArrayDefuncionarios[posiçãoLivre] = f;

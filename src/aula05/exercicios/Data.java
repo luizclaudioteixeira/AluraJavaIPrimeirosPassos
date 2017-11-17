@@ -1,4 +1,4 @@
-package aula03.Exercicios;
+package aula05.exercicios;
 
 /*
  * Em vez de utilizar uma String para representar a data, crie uma outra classe, chamada Data. 

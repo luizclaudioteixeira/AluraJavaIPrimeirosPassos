@@ -1,4 +1,4 @@
-package exercicios;
+package aula04.exercicios;
 
 import aula03.Exercicios.Funcionario;
 
